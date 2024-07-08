@@ -83,11 +83,11 @@ h4{
 }
 
 .list li.credit{
-    border-right: 10px solid #FF0000;
+    border-right: 10px solid #008000;
 }
 
 .list li.debit{
-    border-right: 10px solid #008000;
+    border-right: 10px solid #FF0000;
 }
 
 .delete-btn{
@@ -133,4 +133,10 @@ input{
     margin: 10px 0 30px;
     padding: 10px;
     width: 100%;
+}
+@media screen and (min-width: 320px) and (max-width: 425px){
+    .container{
+        margin: 30px auto;
+        width: 290px;
+    }
 }
