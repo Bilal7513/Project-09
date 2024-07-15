@@ -13,7 +13,7 @@ const Transactions = [
     // {id: 4, reason: 'Dinner', amount: -60}, 
 ];
 
-let transactions = JSON.parse(localStorage.getItem('transactions')) || [];
+let transactions = JSON.parse(localStorage.getItem('transactions'));
 
 function displayTransaction(transaction){
     const type = transaction.amount > 0 ? '+' : '-';
