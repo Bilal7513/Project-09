@@ -40,7 +40,7 @@ function updateBalance(){
 };
 
 function createID(){
-    return Math.floor(Math.random() * 100000000000);
+    return Math.floor(Math.random() * 100000);
 };
 
 function addTranaction(e){
