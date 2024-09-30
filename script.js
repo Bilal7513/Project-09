@@ -6,14 +6,7 @@ const form = document.getElementById('add-form');
 const reason = document.getElementById('reason');
 const amount = document.getElementById('amount');
 
-const Transactions = [
-    // {id: 1, reason: 'Salary', amount: 5000}, 
-    // {id: 2, reason: 'Breakfast', amount: -20}, 
-    // {id: 3, reason: 'Lunch', amount: -30}, 
-    // {id: 4, reason: 'Dinner', amount: -60}, 
-];
-
-let transactions = JSON.parse(localStorage.getItem('transactions') || []);
+let transactions = JSON.parse(localStorage.getItem('transactions')) || [];
 
 function displayTransaction(transaction){
     const type = transaction.amount > 0 ? '+' : '-';
